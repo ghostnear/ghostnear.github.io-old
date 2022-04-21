@@ -1,0 +1,31 @@
+<nav class="navbar navbar-expand-lg navbar-light">
+  <div class="container-fluid">
+    <!-- Site name -->
+    <a class="navbar-brand p-0" href="{{ '/' | relative_url }}"> {{ site.name }} </a>
+
+    <!-- Mobile navigator-->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#siteHeader" aria-controls="navbarNav" aria-expanded="false" aria-label="Open mobile menu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <!-- Site header -->
+    <div class="collapse navbar-collapse" id="siteHeader">
+      <!-- Menu -->
+      <ul class="navbar-nav me-auto">
+        {% for item in site.data.navigation %}
+          <li class="nav-item my-1">
+            <a href="{{ item.link | relative_url }}" {% if page.url == item.link %} class="nav-link text-center active" {% else %} class="nav-link text-center" {% endif %}>{{ item.name }}</a>
+          </li>
+        {% endfor %}
+      </ul>
+      <!-- Theme switch -->
+      <div class="form-check form-switch d-flex my-2">
+        <div class="mx-auto my-auto d-flex">
+          <input class="form-check-input my-auto me-1" id="themeSwitch" type="checkbox" role="switch">
+          <label class="form-check-label my-auto ms-1 h5" for="themeSwitch">
+            {% include svg/moon.svg %}
+          </label>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>

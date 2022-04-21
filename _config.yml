@@ -1,0 +1,35 @@
+#
+# This file contains configuration flags to customize your site
+#
+
+# Name of your site (displayed in the navbar)
+name: GhostNear's Shack
+
+# Your site's title (e.g., Ben's Awesome Site, The GitHub Blog, etc.), used as part of the title tag like Home | Ben's Awesome Site.
+title: GhostNear's Shack
+
+# The full URL to your site. Note: site.github.url will be used by default.
+url: ghostnear.github.io
+
+# global author information
+author: ghostnear
+
+# Permanent post link
+permalink: /:year/:month/:day/:title/
+
+# Includes an icon for each link you enter
+links:
+  anilist: ghostnear
+  email: ghostnear1841@gmail.com
+  kitsu: ghostnear
+  github: ghostnear
+  twitter: ghostnear1841
+  osu: 26598272
+  steam: ghostnear1841
+  discord: GhostNear#2047
+
+# Site plugins
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-feed

@@ -1,0 +1,17 @@
+<footer class="footer mt-auto py-3">
+  <div class="container footer-container">
+  {% if site.links.email %}
+    <a class="footer-icon-links" href="mailto:{{ site.footer-links.email }}" target="_blank" rel="noreferrer noopener">
+      {% include svg/email.svg %}
+    </a>
+  {% endif %}
+  {% if site.links.github %}
+    <a class="footer-icon-links" href="https://github.com/{{ site.footer-links.github }}" target="_blank" rel="noreferrer noopener">
+      {% include svg/github.svg %}
+    </a>
+  {% endif %}
+    <a class="footer-icon-links" href="{{ site.baseurl }}/feed.xml" target="_blank" rel="noreferrer noopener">
+      {% include svg/rss.svg %}
+    </a>
+  </div>
+</footer>
