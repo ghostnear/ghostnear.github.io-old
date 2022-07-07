@@ -11,6 +11,11 @@ body
     font-family: VT323, Consolas, monaco, monospace;
 }
 
+a {
+    color: #5599FF !important;
+    text-decoration: none !important;
+}
+
 ::-webkit-scrollbar {
     width: 4px;
     background-color: #0c1d12;
@@ -38,7 +43,7 @@ body
     left: -8px;
     bottom: 6px;
     display: inline-block;
-    background-color: #406060;
+    background-color: currentColor;
     vertical-align: bottom;
     width: 8px;
     height: 4px;
